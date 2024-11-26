@@ -1,4 +1,4 @@
-# AI SaaS Landing Page Website Template by Frontend Tribe
+# AI SaaS Landing Page Website Template
 
 This is a starter template for the AI SaaS Landing Page video created by Frontend Tribe.
 
