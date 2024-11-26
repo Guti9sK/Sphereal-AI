@@ -5,18 +5,13 @@ import SectionContent from "@/components/SectionContent";
 import underlineImg from "@/assets/images/underline.svg?url";
 import CenteredCircle from "@/components/CenteredCircle";
 import Planet from "@/components/Planet";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useMousePosition } from "./Hero";
 
 const CallToAction = () => {
   const { xProgress, yProgress } = useMousePosition();
   const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-  const TransformedY = useTransform(scrollYProgress, [0, 1], [-200, 200]);
   const springX = useSpring(xProgress);
   const springY = useSpring(yProgress);
   const TranslateLargeX = useTransform(springX, [0, 1], ["-25%", "25%"]);
