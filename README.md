@@ -1,4 +1,6 @@
-# AI SaaS Landing Page Website Template
+# Sphereal-AI Landing Page
+
+![SpherealLanding](src/assets/images/sphereal.webp)
 
 This project is based on the AI SaaS landing page starter template provided by Frontend Tribe, and I followed their tutorial to complete the development of the site.
 
